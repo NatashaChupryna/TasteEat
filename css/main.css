@@ -693,13 +693,13 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
-  gap: 20px;
 }
 .menu--right__item::before {
   content: "";
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  background-color: #AAAAAA;
   height: 1px;
 }
 @media screen and (min-width: 1200px) {
@@ -737,12 +737,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 210px;
-}
-@media screen and (min-width: 1200px) {
-  .menu--right__name--wrap {
-    min-width: 350px;
-  }
+  margin-left: 25px;
 }
 
 .menu--right__name {
@@ -773,9 +768,6 @@ ul {
 }
 
 .menu--right__price {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;

@@ -140,11 +140,12 @@
   display: flex;
   align-items: center;
   margin-bottom: 25px;
-  gap: 20px;
+  
 
   &::before {
     content: "";
     flex-grow: 1;
+    background-color: #AAAAAA;
     height: 1px;}
 
   @media screen and (min-width: 1200px) {
@@ -167,10 +168,8 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  min-width: 210px;
-  @media screen and (min-width: 1200px) {
-    min-width: 350px;
-  }
+  margin-left: 25px;
+
 }
 
 .menu--right__name {
@@ -201,7 +200,6 @@
 //   position: absolute;
 //   right: 5px;
 //   bottom: -10px;
- order: -1;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
