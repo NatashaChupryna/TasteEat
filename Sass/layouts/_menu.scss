@@ -1,0 +1,228 @@
+.menu {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 100px;
+  }
+}
+
+// -----------***| Left side  |***----------
+.menu--left {
+  width: 290px;
+  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+    margin-bottom: 0;
+  }
+}
+.menu--left__uppertitle {
+  font-family: $textFont;
+  border-top: 1px solid $accent-color;
+  border-bottom: 1px solid $accent-color;
+  width: 60px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $title-color;
+  margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+  }
+}
+
+.menu--left__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  color: $title-color;
+  margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+  }
+}
+
+.menu--left__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0.1.5;
+  letter-spacing: 0.2px;
+  color: $text-color;
+  margin-bottom: 45px;
+}
+
+.menu--left__img {
+  width: 290px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    width: 398px;
+    margin-bottom: 60px;
+  }
+}
+
+.menu--left__btn {
+  border: 1px solid $accent-color;
+  color: $accent-color;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  min-width: 120px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 20px 50px;
+    font-size: 22px;
+    min-width: 250px;
+  }
+}
+
+// -----------***| Right side  |***----------
+
+.menu--right {
+  width: 290px;
+
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+  }
+}
+.menu--right__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: $title-color;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+}
+.menu--right__list {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 70px;
+  }
+}
+.menu--right__item {
+//   position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 20px;
+
+  &::before {
+    content: "";
+    flex-grow: 1;
+    height: 1px;}
+
+  @media screen and (min-width: 1200px) {
+    width: 800px;
+    margin-bottom: 50px;
+  }
+}
+.menu--right__img {
+     order: -1;
+  width: 53px;
+  height: 53px;
+
+  @media screen and (min-width: 1200px) {
+    width: 83px;
+    height: 83px;
+  }
+}
+.menu--right__name--wrap {
+    order: -1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 210px;
+  @media screen and (min-width: 1200px) {
+    min-width: 350px;
+  }
+}
+
+.menu--right__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: $title-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+
+.menu--right__text {
+  font-family: $textFont;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+  }
+}
+
+.menu--right__price {
+//   position: absolute;
+//   right: 5px;
+//   bottom: -10px;
+ order: -1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+//   &::before {
+//     content: "";
+//     display: block;
+//     flex-grow: 1;
+//     min-width: 240px;
+//     height: 1px;
+//     background-color: rgba(157, 164, 189, 0.12);
+//     @media screen and (min-width: 1200px) {
+//       min-width: 505px;
+//     }
+//   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    right: 150px;
+    bottom: 20px;
+  }
+}

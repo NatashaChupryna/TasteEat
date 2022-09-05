@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=he, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +24,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -55,7 +61,7 @@
               </li>
 
               <li class="nav__item">
-                <a href="" class="nav__link"> Our Menu </a>
+                <a href="./menu.html" class="nav__link"> Our Menu </a>
               </li>
 
               <li class="nav__item">
@@ -142,7 +148,7 @@
               The people, food and the prime locations make the perfect place
               good friends & family to come together and have great time.
             </p>
-            <button class="hero__btn">View Menu</button>
+            <a class="hero__btn" href="#menu">View Menu</a>
           </div>
 
           <div class="hero-img-wrap">
@@ -156,34 +162,420 @@
               alt="view from window"
             />
 
-            <img 
-            class="hero__img--circle"
-             srcset="
+            <img
+              class="hero__img--circle"
+              srcset="
                 ./images/hero/circle@1x.png 1x,
                 ./images/hero/circle@2x.png 2x
               "
-            src="./images/hero/circle@1x.png" 
-            alt="pattern">
+              src="./images/hero/circle@1x.png"
+              alt="pattern"
+            />
           </div>
         </div>
       </section>
       <!-- -----------***| Location  |***---------- -->
-      <section>
-        <div class="container"></div>
+      <section class="location">
+        <div class="container location-container">
+          <ul class="location__list">
+            <li class="location__item">
+              <div class="img__bg">
+                <svg class="location__img" width="30" height="30">
+                  <use href="./images/icons.svg#location"></use>
+                </svg>
+              </div>
+              <div class="location__title--wrap">
+                <p class="location__title">Locate Us</p>
+                <a
+                  class="location__text"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://goo.gl/maps/84Xeo1BVExYZCZkZ6"
+                  >Riverside 25, San Diego, California</a
+                >
+              </div>
+            </li>
+
+            <li class="location__item">
+              <div class="img__bg">
+                <svg class="location__img" width="30" height="30">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="location__title--wrap">
+                <p class="location__title">Open Hours</p>
+                <p class="location__text">
+                  Mon To Fri <time>9:00</time>AM -<time>9:00</time>PM
+                </p>
+              </div>
+            </li>
+
+            <li class="location__item">
+              <div class="img__bg">
+                <svg class="location__img" width="40" height="40">
+                  <use href="./images/icons.svg#reservation"></use>
+                </svg>
+              </div>
+              <div class="location__title--wrap">
+                <p class="location__title">Reservation</p>
+                <a class="location__text" href="mailto:restaurantate@gmail.com"
+                  >restaurantate@gmail.com</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- -----------***| The Delicious Story  |***---------- -->
-      <section>
-        <div class="container"></div>
+      <section class="delicious-story">
+        <div class="container ds-container">
+          <img
+            srcset="
+              ./images/TheDeliciousStory/IMAGE@1x.jpg 1x,
+              ./images/TheDeliciousStory/IMAGE@2x.jpg 2x
+            "
+            src="./images/TheDeliciousStory/IMAGE@1x.jpg"
+            alt="Restaurant"
+            class="ds__img"
+          />
+          <div class="ds__title--wrap">
+            <h2 class="ds__title">The Delicious Story</h2>
+            <p class="ds__text">
+              The people, food and the prime locations make the perfect place
+              for the friends & family to come together and have great time.
+            </p>
+            <ul class="ds__list">
+              <li class="ds__list-item">
+                <p class="ds__title">2018</p>
+                <p class="ds__text">
+                  Plan for this restaurant to deliver healthy food.
+                </p>
+              </li>
+              <li class="ds__list-item">
+                <p class="ds__title">2022</p>
+                <p class="ds__text">
+                  Happily in the fourth year by fulfill the motto.
+                </p>
+              </li>
+            </ul>
+            <img
+              srcset="
+                ./images/TheDeliciousStory/signature@1x.png 1x,
+                ./images/TheDeliciousStory/signature@2x.png 2x
+              "
+              src="./images/TheDeliciousStory/signature@1x.png"
+              alt="signature"
+              class="ds__img--signature"
+            />
+          </div>
+        </div>
       </section>
 
       <!-- -----------***| Menu  |***---------- -->
-      <section>
-        <div class="container"></div>
+      <section class="menu" id="menu">
+        <div class="container menu-container">
+          <div class="menu--left">
+            <p class="menu--left__uppertitle">Menu</p>
+            <h2 class="menu--left__title">Try Our Special dishes</h2>
+            <p class="menu--left__text">
+              Every time you perfectly dine with us, it should happy for great
+              inspired food in an environment designed with individual touches
+              unique to the local area.
+            </p>
+            <img
+              srcset="
+                ./images/menu/IMAGE@1x.jpg 1x,
+                ./images/menu/IMAGE@2x.jpg 2x
+              "
+              src="./images/menu/IMAGE@1x.jpg"
+              alt="pie"
+              class="menu--left__img"
+            />
+            <a href="./menu.html" class="menu--left__btn">See all dishes</a>
+          </div>
+
+          <div class="menu--right">
+            <h3 class="menu--right__title">Starters</h3>
+            <ul class="menu--right__list">
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/starter1@1x.png 1x,
+                    ./images/menu/starter1@2x.png 2x
+                  "
+                  src="./images/menu/starter1@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">Raw Scallops from Erquy</p>
+                  <p class="menu--right__text">
+                    Shuck the scallop to that used for oysters
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;40</span>
+              </li>
+
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/starter2@1x.png 1x,
+                    ./images/menu/starter2@2x.png 2x
+                  "
+                  src="./images/menu/starter2@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">Spring Roll</p>
+                  <p class="menu--right__text">
+                    Add oil to a hot pan spring onion whites
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;20</span>
+              </li>
+
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/starter3@1x.png 1x,
+                    ./images/menu/starter3@2x.png 2x
+                  "
+                  src="./images/menu/starter3@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">French Onion Soup</p>
+                  <p class="menu--right__text">
+                    Wheat flour, apple cider vinegar, bread
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;25</span>
+              </li>
+
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/starter4@1x.png 1x,
+                    ./images/menu/starter4@2x.png 2x
+                  "
+                  src="./images/menu/starter4@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">Tomato Bruschetta</p>
+                  <p class="menu--right__text">
+                    Bread, olive oil, garlic, black pepper
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;30</span>
+              </li>
+            </ul>
+
+            <h3 class="menu--right__title">Main Dish</h3>
+            <ul class="menu--right__list">
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/main1@1x.png 1x,
+                    ./images/menu/main1@2x.png 2x
+                  "
+                  src="./images/menu/main1@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">
+                    Grilled Salmon with Dill Sauce
+                  </p>
+                  <p class="menu--right__text">
+                    Brown sugar, salmon fillet, Dijon mustard
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;40</span>
+              </li>
+
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/main2@1x.png 1x,
+                    ./images/menu/main2@2x.png 2x
+                  "
+                  src="./images/menu/main2@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">Roast Beef with Vegetable</p>
+                  <p class="menu--right__text">
+                    Green beans, rib eye, olive oil, beef
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;20</span>
+              </li>
+
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/main3@1x.png 1x,
+                    ./images/menu/main3@2x.png 2x
+                  "
+                  src="./images/menu/main3@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">Marrkesh Vegetetarian Curruy</p>
+                  <p class="menu--right__text">
+                    Sweet potato, eggplant, garbanzo bean
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;25</span>
+              </li>
+
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/main4@1x.png 1x,
+                    ./images/menu/main4@2x.png 2x
+                  "
+                  src="./images/menu/main4@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">Spicy Vegan Potato Curry</p>
+                  <p class="menu--right__text">
+                    Coconut milk, beans, potatoes, curry powder
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;35</span>
+              </li>
+            </ul>
+
+            <h3 class="menu--right__title">Dessert</h3>
+            <ul class="menu--right__list">
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/dessert1@1x.png 1x,
+                    ./images/menu/dessert1@2x.png 2x
+                  "
+                  src="./images/menu/dessert1@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">Apple Pie with Cream</p>
+                  <p class="menu--right__text">
+                    Whipping cream, egg white, cinnamon
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;15</span>
+              </li>
+
+              <li class="menu--right__item">
+                <img
+                  class="menu--right__img"
+                  srcset="
+                    ./images/menu/dessert2@1x.png 1x,
+                    ./images/menu/dessert2@2x.png 2x
+                  "
+                  src="./images/menu/dessert2@1x.png"
+                  alt="menu position"
+                />
+                <div class="menu--right__name--wrap">
+                  <p class="menu--right__name">Lemon Meringue Pie</p>
+                  <p class="menu--right__text">
+                    Frozen pie crust, meringue, lemon
+                  </p>
+                </div>
+                <span class="menu--right__price">&#36;30</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- -----------***| Feedback |***---------- -->
-      <section>
+      <section class="feedback">
+        <div class="container">
+          <p class="feedback__uppertitle">Feedback</p>
+          <h3 class="feedback__title">our clients say</h3>
+          <p class="feedback__text">
+            We love to hear from customers, so please leave a comment or say
+            hello in an email.
+          </p>
+
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slide__img--wrap" >
+                 <img class="slide__icon" src="./images/feedback/quotes.png" alt="quotes sign">
+                  <img class="slide__img" 
+                  src="./images/feedback/natasha@2x.png" 
+                  alt="author photo" />
+<div class="slide__author--wrap">
+                  <p class="slide__author">Natasha D</p>
+                  <p class="slide__city">New York</p>
+                </div>
+                </div>
+
+               <p class="slide__text">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</p>
+              </div>
+
+
+              <div class="swiper-slide">
+                <div class="slide__img--wrap">
+                    <img class="slide__icon" src="./images/feedback/quotes.png" alt="quotes sign">
+                  <img class="slide__img" 
+                  src="./images/feedback/jack@2x.png" 
+                  alt="author photo" />
+<div class="slide__author--wrap">
+                  <p class="slide__author">Jack Sparrow</p>
+                  <p class="slide__city">Salt Lake City</p>
+                </div>
+                </div>
+
+               <p class="slide__text">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</p>
+              </div>
+
+
+             <div class="swiper-slide">
+                <div class="slide__img--wrap">
+                    <img class="slide__icon" src="./images/feedback/quotes.png" alt="quotes sign">
+                  <img class="slide__img" 
+                  src="./images/feedback/martin@2x.png" 
+                  alt="author photo" />
+<div class="slide__author--wrap">
+                  <p class="slide__author">Martin</p>
+                  <p class="slide__city">San Diego</p>
+                </div>
+                </div>
+
+               <p class="slide__text">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</p>
+              </div>
+
+              
+              
+            </div>
+       
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+           
+          </div>
+        </div>
+      </section>
+
+  <!-- -----------***|bg |***---------- -->
+      <section class="bg">
         <div class="container"></div>
       </section>
 
@@ -218,7 +610,7 @@
     </footer>
 
     <!-- -----------***| Mobile menu  |***---------- -->
-    <div class="menu-overlay">
+    <!-- <div class="menu-overlay">
       <div class="mobile-menu">
         <button class="mobile-menu__btn">
           <svg class="mobile-menu__icon" width="20" height="20">
@@ -253,6 +645,9 @@
           </ul>
         </nav>
       </div>
-    </div>
-  </body>
+    </div> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./swiper.js"></script>  
+</body>
 </html>

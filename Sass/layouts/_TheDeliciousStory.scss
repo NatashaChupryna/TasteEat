@@ -1,0 +1,71 @@
+.delicious-story{
+    background-color: #FFF8F5;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    @media screen and (min-width: 1200px){
+            padding-top: 50px;
+    padding-bottom: 100px;
+    }
+}
+
+.ds-container{
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+}
+
+.ds__img{
+width: 290px;
+margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px){
+    width: 700px;
+    margin-bottom: 0;
+}
+}
+
+.ds__title--wrap{
+    width: 290px;
+
+    @media screen and (min-width: 1200px){
+    width: 500px;
+}
+}
+
+.ds__title{
+    font-weight: 400;
+font-size: 20px;
+line-height: 1.4;
+letter-spacing: 0.2px;
+columns: $title-color;
+margin-bottom: 15px;
+@media screen and (min-width: 1200px){
+    font-size: 40px;
+}
+}
+
+.ds__text{
+       font-family: $textFont;
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+letter-spacing: 0.2px;
+color: $text-color;
+margin-bottom: 20px;
+@media screen and (min-width: 1200px){
+    font-size: 20px;
+}
+}
+
+.ds__list{
+    display: flex;
+}
+.ds__img--signature{
+    width: 100px;
+    @media screen and (min-width: 1200px){
+   width: 200px;
+}
+}
