@@ -1,0 +1,121 @@
+.popular-dishes {
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
+}
+
+.popular-dishes-container {
+  text-align: center;
+}
+.popular-dishes__uppertitle {
+  font-family: $textFont;
+  border-top: 1px solid $accent-color;
+  border-bottom: 1px solid $accent-color;
+  width: 60px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $title-color;
+  margin-bottom: 12px;
+  padding-top: 2px;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+  }
+}
+
+.popular-dishes__title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  color: $title-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+  }
+}
+
+.popular-dishes__text {
+  font-family: $textFont;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $text-color;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.popular-dishes__list{
+
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.popular-dishes__item{
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.item__img{
+   width: 270px;
+
+     @media screen and (min-width: 1200px){
+        width: 318px;
+     }
+}
+.item__title--wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(121, 126, 137, 0.4);
+}
+.item__title{
+font-weight: 400;
+font-size: 18px;
+line-height: 1.4;
+letter-spacing: 0.2px;
+color: $title-color;
+ @media screen and (min-width: 1200px){
+    font-size: 30px;
+ }
+}
+.item__price{
+    font-weight: 400;
+font-size: 18px;
+line-height: 42px;
+letter-spacing: 0.2px;
+color: $title-color;
+ @media screen and (min-width: 1200px){
+    font-size: 30px;
+ }
+}
+.popular-dishes__item__text{
+    font-family: $textFont;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color:$text-color;
+margin-top: 10px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+  }
+}
