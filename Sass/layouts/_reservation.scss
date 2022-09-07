@@ -1,5 +1,5 @@
 .reservation{
-
+background-size: cover;
 background-image: url(../images/reservation/IMAGE@1x.jpg);
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -55,7 +55,7 @@ background-image: url(../images/reservation/IMAGE@1x.jpg);
 }
 .form__title{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.4;
     letter-spacing: 0.2px;
     text-transform: capitalize;
@@ -80,8 +80,14 @@ background-image: url(../images/reservation/IMAGE@1x.jpg);
 
 .form__input--wrap{
     display: flex;
-    align-items: center;
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+  
    
 }
 .form__input, .form__input--name{
@@ -92,11 +98,14 @@ background-image: url(../images/reservation/IMAGE@1x.jpg);
     padding-bottom: 8px;
     font-family: $textFont;
     font-weight: 400;
-font-size: 22px;
+font-size: 14px;
 line-height: 1.5;
 letter-spacing: 0.2px;
 color: #FFFFFF;
 outline: transparent;
+&::placeholder{
+    color: #ffffff;
+}
    
 &:focus-within{
     border: 1px solid #858585;
@@ -105,17 +114,21 @@ outline: transparent;
     padding-top: 18px;
     padding-left: 20px;
     padding-bottom: 18px;
+    font-size: 22px;
 }
 }
 
 .form__input--name{
-    min-width: 300px;
-    &-input-placeholder{
-        color: #FFFFFF;
+    min-width: 270px;
+    @media screen and (min-width: 1200px){
+        min-width: 300px; 
     }
 }
 .form__input{
-    min-width: 196.5px;
+    min-width: 270px;
+    @media screen and (min-width: 1200px){
+        min-width: 196.5px;
+    }
 }
 
 
