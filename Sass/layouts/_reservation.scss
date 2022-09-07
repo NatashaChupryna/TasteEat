@@ -24,7 +24,7 @@ background-image: url(../images/reservation/IMAGE@1x.jpg);
  background-color:  rgba(41, 46, 54, 0.9);
  padding-top: 40px;
  padding-bottom: 50px;
- padding-left: 10px;
+ padding-left: 13px;
  padding-right: 10px;
  text-align: center;
 
@@ -72,6 +72,7 @@ background-image: url(../images/reservation/IMAGE@1x.jpg);
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    margin-left: auto;
 
     @media screen and (min-width: 1200px) {
         width: 640px;
