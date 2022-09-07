@@ -887,8 +887,10 @@
 
           <ul class="blog__list">
             <li class="blog__item">
-                <div class="blog__item--bg--left"><a href="" class="blog__btn">View More</a></div>
-              
+              <div class="blog__item--bg--left">
+                <a href="" class="blog__btn">View More</a>
+              </div>
+
               <div class="blog__item--wrap">
                 <p class="blog__item__uppertitle">Delicious</p>
                 <p class="blog__item__uppertitle">March 19, 2022</p>
@@ -904,7 +906,9 @@
             </li>
 
             <li class="blog__item">
-              <div class="blog__item--bg--right"><a href="" class="blog__btn">View More</a></div>
+              <div class="blog__item--bg--right">
+                <a href="" class="blog__btn">View More</a>
+              </div>
               <div class="blog__item--wrap">
                 <p class="blog__item__uppertitle">Cooking</p>
                 <p class="blog__item__uppertitle">March 19, 2022</p>
@@ -923,8 +927,39 @@
       </section>
 
       <!-- -----------***|Reservation |***---------- -->
-      <section>
-        <div class="container"></div>
+      <section class="reservation">
+        <div class="container reservation-container">
+          <div class="form-wrap">
+            <p class="form__uppertitle">reservation</p>
+            <h2 class="form__title">Book Your Table</h2>
+            <form action="" class="form">
+                <div class="form__input--wrap">
+              <label  class="form__label"
+                ><input name="name" type="name"  placeholder="Name" class="form__input--name"
+              /></label>
+
+              <label  class="form__label"
+                ><input type="email" placeholder="Email" class="form__input--name" name="email"
+              /></label>
+            </div>
+
+              <label  class="form__label"
+                >
+                <input  class="form__input" placeholder="Persons" type="number" name="Persons" value="0" min="1" max="6" />
+                
+              </label>
+
+              <label  class="form__label"
+                ><input name="date" class="form__input" placeholder="Date" type="date" min="2022-01-01" max="2024-01-01"
+              /></label>
+
+              <label  class="form__label"
+                ><input name="time" placeholder="Time" type="time" step="1800" class="form__input"
+              /></label>
+            </form>
+            <button class="form-btn" type="submit">Book A Table</button>
+          </div>
+        </div>
       </section>
     </main>
 

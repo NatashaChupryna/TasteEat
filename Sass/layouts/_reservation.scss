@@ -1,0 +1,137 @@
+.reservation{
+
+background-image: url(../images/reservation/IMAGE@1x.jpg);
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/reservation/IMAGE@2x.jpg);
+  }
+
+    @media screen and (min-width: 1200px){
+        height: 977px;
+    }
+}
+.reservation-container{
+    text-align: center;
+    height: 100%;
+    @media screen and (min-width: 1200px){
+        padding: 140px 260px;
+      }
+
+}
+.form-wrap{
+ background-color:  rgba(41, 46, 54, 0.9);
+ padding-top: 40px;
+ padding-bottom: 50px;
+ padding-left: 10px;
+ padding-right: 10px;
+ text-align: center;
+
+ @media screen and (min-width: 1200px){
+   padding: 140px 70px;
+  
+ }
+}
+.form__uppertitle{
+    font-family: $textFont;
+  border-top: 1px solid $accent-color;
+  border-bottom: 1px solid $accent-color;
+  width: 180px;
+  padding-top: 4px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+  }
+}
+.form__title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    color: #ffffff;
+    @media screen and (min-width: 1200px) {
+      font-size: 40px;
+    }
+}
+
+.form{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media screen and (min-width: 1200px) {
+        width: 640px;
+    }   
+}
+
+.form__input--wrap{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+}
+.form__input, .form__input--name{
+    background-color: transparent;
+    border: 1px solid #858585;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    font-family: $textFont;
+    font-weight: 400;
+font-size: 22px;
+line-height: 1.5;
+letter-spacing: 0.2px;
+color: #FFFFFF;
+outline: transparent;
+   
+&:focus-within{
+    border: 1px solid #858585;
+}
+@media screen and (min-width: 1200px){
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-bottom: 18px;
+}
+}
+
+.form__input--name{
+    min-width: 300px;
+    &-input-placeholder{
+        color: #FFFFFF;
+    }
+}
+.form__input{
+    min-width: 196.5px;
+}
+
+
+.form-btn{
+    background: #FFFFFF;
+    color: $title-color;
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.2px;
+padding: 10px 20px;
+border: none;
+@media screen and (min-width: 1200px){
+    font-size: 22px;
+    width: 242px;
+    padding: 20px 50px;
+}
+}
