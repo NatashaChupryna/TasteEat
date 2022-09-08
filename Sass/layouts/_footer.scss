@@ -10,6 +10,10 @@ padding-bottom: 50px;
 }
 
 .footer-container{
+    @media screen and (min-width: 320px) and (max-width: 1199px){
+        text-align: center;
+    }
+
     @media screen and (min-width: 1200px){
         display: flex;
          align-items: center;
@@ -20,9 +24,14 @@ padding-bottom: 50px;
 .footer__block{
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 320px) and (max-width: 1199px){
+        margin-bottom: 30px;
+    }
+   
 }
 .footer__block--centered{
     justify-content: center;
+    align-items: center;
 }
 .block__title{
     font-family: $textFont;
@@ -42,7 +51,7 @@ margin-bottom: 30px;
     font-family: $textFont;
     border-top: 1px solid $accent-color;
     border-bottom: 1px solid $accent-color;
-    width: 180px;
+    width: 100%;
     padding-top: 3px;
     text-align: center;
     font-weight: 400;
@@ -56,6 +65,7 @@ margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
       font-size: 15px;
       margin-bottom: 30px;
+      width: 180px;
     }
 }
 .block__adress{
@@ -84,7 +94,7 @@ color: $accent-color;
 }
 }
 .footer__logo{
-
+    width: 290px;
     margin-bottom: 20px;
     @media screen and (min-width: 1200px){
         
@@ -113,7 +123,7 @@ color: #FFFFFF;
 }
 }
 .footer__form__input{
-    width: 200px;
+    width: 290px;
     background-color: transparent;
     border: 1px solid #858585;
     padding-top: 8px;
@@ -141,24 +151,45 @@ outline: transparent;
     width: 600px;
 }
 }
+// input[type="date"]:not(.has-value):before{
+//     color: #FFFFFF;
+//     content: attr(placeholder);
+//   }
+// input[type="date"]:before {
+//     color: lightgrey;
+//     content: attr(placeholder) !important;
+//     margin-right: 0.5em;
+//   }
+
+// input[type="date"]:before{
+//     color:lightgray;
+//     content:attr(placeholder);
+// }
+
+// input[type="date"].full:before {
+//     color:black;
+//     content:""!important;
+// }
+
 .footer-btn{
     position: absolute;
-    bottom: 3%;
+    bottom: 0;
     right: 0;
+    height: 38px;
     font-family: $textFont;
     background-color: #ffffff;
-    padding: 8px 15px;
+    padding: 8px 10px;
     font-weight: 400;
-font-size: 16px;
+font-size: 14px;
 line-height: 1.5;
 text-align: center;
 letter-spacing: 0.2px;
 border: transparent;
-
 color: #000000;
     @media screen and (min-width: 1200px){
         padding: 17px 40px;
         font-size: 22px;
+        height: 70px;
     }
 }
 .footer__social-list{

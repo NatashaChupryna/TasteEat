@@ -73,6 +73,7 @@ background-image: url(../images/reservation/IMAGE@1x.jpg);
     flex-wrap: wrap;
     gap: 20px;
     margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 1200px) {
         width: 640px;
@@ -130,6 +131,7 @@ outline: transparent;
     @media screen and (min-width: 1200px){
         min-width: 196.5px;
     }
+   
 }
 
 
