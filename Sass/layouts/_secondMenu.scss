@@ -56,63 +56,60 @@
     margin-left: auto;
   }
 }
-.popular-dishes__list{
-
-
-    @media screen and (min-width: 1200px){
-        display: flex;
-        gap: 30px;
-    }
-}
-
-.popular-dishes__item{
-    margin-bottom: 15px;
-    padding: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-}
-.item__img{
-   width: 270px;
-
-     @media screen and (min-width: 1200px){
-        width: 318px;
-     }
-}
-.item__title--wrap{
+.popular-dishes__list {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(121, 126, 137, 0.4);
+    gap: 30px;
+  }
 }
-.item__title{
-font-weight: 400;
-font-size: 18px;
-line-height: 1.4;
-letter-spacing: 0.2px;
-color: $title-color;
- @media screen and (min-width: 1200px){
+
+.popular-dishes__item {
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.item__img {
+  width: 270px;
+
+  @media screen and (min-width: 1200px) {
+    width: 318px;
+  }
+}
+.item__title--wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(121, 126, 137, 0.4);
+}
+.item__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: $title-color;
+  @media screen and (min-width: 1200px) {
     font-size: 30px;
- }
+  }
 }
-.item__price{
-    font-weight: 400;
-font-size: 18px;
-line-height: 42px;
-letter-spacing: 0.2px;
-color: $title-color;
- @media screen and (min-width: 1200px){
+.item__price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 42px;
+  letter-spacing: 0.2px;
+  color: $title-color;
+  @media screen and (min-width: 1200px) {
     font-size: 30px;
- }
+  }
 }
-.popular-dishes__item__text{
-    font-family: $textFont;
+.popular-dishes__item__text {
+  font-family: $textFont;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color:$text-color;
-margin-top: 10px;
+  color: $text-color;
+  margin-top: 10px;
 
   @media screen and (min-width: 1200px) {
     font-size: 20px;

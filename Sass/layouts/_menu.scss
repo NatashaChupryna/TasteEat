@@ -44,6 +44,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   color: $title-color;
+  padding-top: 2px;
   margin-bottom: 12px;
   @media screen and (min-width: 1200px) {
     font-size: 15px;
@@ -111,6 +112,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 600px;
+    padding-top: 38px;
   }
 }
 .menu-page{
