@@ -2390,7 +2390,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .backdrop {
-    padding: 140px 260px;
+    padding: 140px 500px;
   }
 }
 .backdrop.is-hidden {
@@ -2440,4 +2440,33 @@ ul {
   position: absolute;
   bottom: 35%;
   left: 30%;
+}
+
+.modal-form__input--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__input--wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+}
+
+.modal-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }/*# sourceMappingURL=main.css.map */

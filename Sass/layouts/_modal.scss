@@ -13,7 +13,7 @@
   text-align: center;
   height: 100%;
   @media screen and (min-width: 1200px) {
-    padding: 140px 260px;
+    padding: 140px 500px;
   }
   &.is-hidden{
     opacity: 0;
@@ -52,4 +52,18 @@
     position: absolute;
     bottom: 35%;
     left: 30%;
+}
+.modal-form__input--wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.modal-form{
+  justify-content: center;
 }
