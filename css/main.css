@@ -113,7 +113,6 @@ ul {
   padding: 20px 50px;
   color: #292E36;
   border: none;
-  min-width: 250px;
   max-height: 70px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -152,16 +151,21 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 50px;
+  gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    gap: 50px;
+  }
 }
 
 .nav__item {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.2px;
   color: #ffffff;
@@ -968,7 +972,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .swiper-button-prev,
-.swiper-button-next {
+  .swiper-button-next {
     width: 27px;
     height: 44px;
   }
@@ -1040,7 +1044,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .offers__title,
-.item__title {
+  .item__title {
     font-size: 40px;
   }
 }
@@ -1056,7 +1060,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .offers__text,
-.item__text {
+  .item__text {
     font-size: 20px;
     letter-spacing: 0.2px;
   }
@@ -1924,7 +1928,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .form__input,
-.form__input--name {
+  .form__input--name {
     padding-top: 18px;
     padding-left: 20px;
     padding-bottom: 18px;
@@ -2082,7 +2086,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .block__link,
-.block__text {
+  .block__text {
     font-size: 18px;
   }
 }
@@ -2402,15 +2406,21 @@ ul {
 .modal-form-wrap {
   position: relative;
   background-color: rgba(41, 46, 54, 0.9);
-  padding-top: 40px;
-  padding-bottom: 50px;
-  padding-left: 13px;
-  padding-right: 10px;
+  padding: 40px 10px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .modal-form-wrap {
+    padding: 70px 30px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-form-wrap {
-    padding: 140px 70px;
+    padding: 100px 30px;
+    width: 700px;
   }
 }
 
@@ -2469,4 +2479,12 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .modal-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */

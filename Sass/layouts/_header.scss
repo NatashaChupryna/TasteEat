@@ -37,7 +37,7 @@
   padding: 20px 50px;
   color: $title-color;
   border: none;
-  min-width: 250px;
+  // min-width: 250px;
   max-height: 70px;
 }
 
@@ -58,14 +58,18 @@
 .nav__list {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    gap: 50px;
+  }
 }
 
 .nav__item {
   font-family: $textFont;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.2px;
   color: #ffffff;
