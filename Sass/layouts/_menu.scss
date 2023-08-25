@@ -115,7 +115,7 @@
     padding-top: 38px;
   }
 }
-.menu-page{
+.menu-page {
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
@@ -145,14 +145,13 @@
   }
 }
 .menu--right__item {
-  //   position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 25px;
 
   &::before {
     content: "";
-    flex-grow: 1;
+    flex-grow: 0.3;
     background-color: #aaaaaa;
     height: 1px;
   }
@@ -205,26 +204,12 @@
 }
 
 .menu--right__price {
-  //   position: absolute;
-  //   right: 5px;
-  //   bottom: -10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.2px;
   display: flex;
   align-items: center;
-  //   &::before {
-  //     content: "";
-  //     display: block;
-  //     flex-grow: 1;
-  //     min-width: 240px;
-  //     height: 1px;
-  //     background-color: rgba(157, 164, 189, 0.12);
-  //     @media screen and (min-width: 1200px) {
-  //       min-width: 505px;
-  //     }
-  //   }
 
   @media screen and (min-width: 1200px) {
     font-size: 30px;
